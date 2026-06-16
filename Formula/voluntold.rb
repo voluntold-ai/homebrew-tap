@@ -36,9 +36,13 @@ class Voluntold < Formula
 
   def install
     # The download is a single bare binary named for the URL basename
-    # (voluntold-<os>-<arch>). Install it as `voluntold`, then generate the
+    # (voluntold-<os>-<arch>). Plain HTTP downloads don't carry the executable
+    # bit, so set it before installing as `voluntold` — otherwise generating
+    # the completions (which execs the binary) fails with EACCES. Then emit the
     # bash/zsh/fish completions from the binary itself.
-    bin.install Dir["voluntold-*"].first => "voluntold"
+    binary = Dir["voluntold-*"].first
+    chmod "+x", binary
+    bin.install binary => "voluntold"
     generate_completions_from_executable(bin/"voluntold", "completion")
   end
 
