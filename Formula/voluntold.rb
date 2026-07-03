@@ -10,27 +10,27 @@
 class Voluntold < Formula
   desc "Agent runtime that routes issue-board work to AI coding agents"
   homepage "https://voluntold.ai"
-  version "0.11.35"
+  version "0.11.36"
 
   on_macos do
     on_arm do
-      url "https://dl.voluntold.ai/v0.11.35/voluntold-darwin-arm64"
-      sha256 "71d02f32cb9b7bc1d02af8f8791c62970edc26035e63127f8111d235eb5dd53f"
+      url "https://dl.voluntold.ai/v0.11.36/voluntold-darwin-arm64"
+      sha256 "319bb83fdb8b60a89be60571a79e6cda9755b415968ceaa6ba30d3d0f3699e4c"
     end
     on_intel do
-      url "https://dl.voluntold.ai/v0.11.35/voluntold-darwin-amd64"
-      sha256 "46eb45c98b275cd3e8137bba24ae76d2ead57908e03d13a8c9b9dfdd456cdede"
+      url "https://dl.voluntold.ai/v0.11.36/voluntold-darwin-amd64"
+      sha256 "bb502d2914bf40feff6e6fa275b8dc4158562c7eb84f45494b2ec4f5ca222a82"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://dl.voluntold.ai/v0.11.35/voluntold-linux-arm64"
-      sha256 "bffd40d31ad2eb90e0c6451060674be59cf5a56b3587270dae172eb056509063"
+      url "https://dl.voluntold.ai/v0.11.36/voluntold-linux-arm64"
+      sha256 "68b94a23c785435be9eea89a4a65ae7c3aed3078a0f5068eafd9a3922bfa790c"
     end
     on_intel do
-      url "https://dl.voluntold.ai/v0.11.35/voluntold-linux-amd64"
-      sha256 "368927c92b38cee36bcd68b302cb987c24b4427b4e060224c97219937ca07f69"
+      url "https://dl.voluntold.ai/v0.11.36/voluntold-linux-amd64"
+      sha256 "71ab0602a426f145e7f9f395bd388d130d2e18ec3faee2580a3888044db3e7f3"
     end
   end
 
